@@ -1,0 +1,79 @@
+	<!DOCTYPE html>
+	
+	<html>
+	<head>
+	<title>Tasbeh Counter</title>
+    <style type="text/css">
+      body{
+        background-image: url("img/1.jpg");
+        background-repeat:no-repeat;
+        background-size: 100%;
+        
+      }
+      
+        .tasbeh{
+            width: 230px;
+            height: 250px;
+            background-color: coral;
+            border: 1px solid chocolate;
+            position: absolute;
+            top: 10%;
+            left: 39%;
+            border-radius: 20%;
+        }
+        .co{
+            width: 57%;
+            position: absolute;
+            top: 10%;
+            left: 20%;
+            height: 30px;
+            caret-color: white;
+            border-radius: 9%;
+            border: 1px solid floralwhite;
+            text-align: center;
+            font-size: 34px;
+            
+        }
+        .co1{
+            width: 60px;
+            position: absolute;
+            top: 42%;
+            left: 37%;
+            height: 60px;
+            border-radius: 50%;
+            background-color: gray;
+        }
+        .co2{
+            width: 45px;
+            position: absolute;
+            top: 74%;
+            left: 41%;
+            height: 45px;
+            border-radius: 50%;
+            background-color: burlywood;
+        }
+        </style>
+        
+	</head>
+	<body>
+        <h1 style="color: azure;">Tasbeeh Counter</h1>
+	    <div class="tasbeh">
+           <input type="text" class="co" value="0"/>
+            <button class="co1"></button>
+             <button class="co2"></button>
+        </div>       
+        <script type = "text/javascript">
+            document.querySelector('.co1').addEventListener('click', function(){
+                var co = document.querySelector('.co');
+                console.log(typeof parseInt(co.value));
+                co.value = parseInt(co.value)+1;
+            });  
+            document.querySelector('.co2').addEventListener('click', function(){
+              document.querySelector('.co').value = 0;
+                
+            });   
+        </script>
+	</body>
+	</html
+ 
+        
